@@ -1,0 +1,185 @@
+
+/*GENERAL STYLES*/
+ body {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(33, 33, 33, 1);
+}
+
+
+.link{
+    text-decoration: none;
+}
+
+/*HEADER STYLE*/
+
+.up-info{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.logo
+{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/11);
+    letter-spacing: 0.02em;
+}
+
+.logo-first-parth{
+    color:rgba(33, 150, 243, 1); 
+ 
+}
+
+.logo-second-parth{
+    color: rgba(0, 0, 0, 1);
+}
+
+.site-links{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color: rgba(33, 33, 33, 1);
+}
+
+.site-links:hover,.contacts-up:hover,.contacts-bottom:hover,.studio-adress:hover,
+.site-links:focus,.contacts-up:focus,.contacts-bottom:focus,.studio-adress:focus{
+   color:rgba(33, 150, 243, 1) ; 
+}
+
+.contacts-up{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color:rgba(117, 117, 117, 1)
+}
+
+/*MAIN STYLES*/
+.hero{
+    background-color: rgba(47, 48, 58, 1);
+}
+
+.hero-text{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60/40);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+}
+
+.hero-button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    background: #2196F3;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.hero-button:active{
+    background: #188CE8;
+    
+}
+
+.features, .about{
+    background: #F5F5F5;
+}
+
+.features-list h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+}
+
+.features-list p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.our-team{
+    background: #F5F4FA;
+}
+
+.about-title, .our-team-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+}
+
+.line-up h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19/16);
+}
+
+.line-up p{
+    font-size: 16px;
+    line-height: calc(19/16);
+    color: #757575;
+}
+
+ /*FOOTER*/
+
+.bottom-info{
+    background: #2F303A
+}
+
+.logo-bottom-parth{
+    color:rgba(255, 255, 255, 1);
+}
+
+.studio-adress{
+    font-style: normal;
+    color: rgba(255, 255, 255, 1);
+}
+
+.contacts-bottom{
+    font-style: normal;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+ /*PORTFOLIO*/
+
+.filter-option {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+    cursor: pointer;
+    background: #F5F4FA;
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter-option:hover,.filter-option:focus{
+    background: rgba(33, 150, 243, 1);
+}
+
+.project-list h2{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36/18);
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.project-list p{
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.03em;   
+    color: #757575;
+}
+
+.our-pojects{
+    background: #F5F5F5;   
+}

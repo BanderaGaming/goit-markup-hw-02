@@ -3,6 +3,24 @@
  body {
     font-family: 'Roboto', sans-serif;
     color: rgba(33, 33, 33, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+:root{
+    --main-studio-color:rgba(33, 150, 243, 1); 
+    --site-nav-color:rgba(33, 33, 33, 1);
+    --logo-second-parth:rgba(0, 0, 0, 1);
+    --header-contact-color:rgba(117, 117, 117, 1);
+    --main-text-color:rgba(255, 255, 255, 1);
+    --hero-background-color:rgba(47, 48, 58, 1);
+    --active-button-color:rgba(24, 140, 232, 1);
+    --description-main-color:#757575;
+    --line-up-background-color:rgba(255, 255, 255, 1);
+    --bottom-logo-color:rgba(255, 255, 255, 1);
+    --bottom-contact-color:rgba(255, 255, 255, 0.6);
+    --footer-color:#2F303A;
+    --filter-option-color:#F5F4FA;
+    --projects-name-color:#212121;
+
 }
 
 ul{
@@ -15,10 +33,6 @@ ul{
 
 /*HEADER STYLE*/
 
-.up-info{
-    background-color: rgba(255, 255, 255, 1);
-}
-
 .logo
 {
     font-family: 'Raleway';
@@ -29,12 +43,12 @@ ul{
 }
 
 .logo-first-parth{
-    color:rgba(33, 150, 243, 1); 
+    color: var(--main-studio-color);
  
 }
 
 .logo-second-parth{
-    color: rgba(0, 0, 0, 1);
+    color: var(--logo-second-parth);
 }
 
 .site-links{
@@ -42,12 +56,12 @@ ul{
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
-    color: rgba(33, 33, 33, 1);
+    color: var(--site-nav-color);
 }
 
 .site-links:hover,.contacts-up:hover,.contacts-bottom:hover,.studio-adress:hover,
 .site-links:focus,.contacts-up:focus,.contacts-bottom:focus,.studio-adress:focus{
-   color:rgba(33, 150, 243, 1) ; 
+   color:var(--main-studio-color); 
 }
 
 .contacts-up{
@@ -55,12 +69,12 @@ ul{
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
-    color:rgba(117, 117, 117, 1)
+    color: var(--header-contact-color);
 }
 
 /*MAIN STYLES*/
 .hero{
-    background-color: rgba(47, 48, 58, 1);
+    background-color: var(--hero-background-color);
 }
 
 .hero-text{
@@ -69,29 +83,26 @@ ul{
     line-height: calc(60/40);
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 1);
+    color: var(--main-text-color);
 }
 
 .hero-button{
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30/16);
-    background: #2196F3;
-    color: rgba(255, 255, 255, 1);
+    background:var(--main-studio-color);
+    color:var(--main-text-color);
     border-radius: 4px;
     cursor: pointer;
 
 }
 
-.hero-button:active{
-    background: #188CE8;
+.hero-button:hover,.hero-button:focus{
+    background: var(--active-button-color);
     
 }
-
-.features, .about{
-    background: #F5F5F5;
-}
-
+ 
 .features-list h3{
     text-transform: uppercase;
     font-weight: 700;
@@ -105,11 +116,7 @@ ul{
     font-size: 14px;
     line-height: calc(24/14);
     letter-spacing: 0.03em;
-    color: #757575;
-}
-
-.our-team{
-    background: #F5F4FA;
+    color: var(--description-main-color);
 }
 
 .about-title, .our-team-title{
@@ -127,22 +134,28 @@ ul{
 .line-up p{
     font-size: 16px;
     line-height: calc(19/16);
-    color: #757575;
+    color: var(--description-main-color);
+}
+
+.line-up li{
+    background: var(--line-up-background-color);
 }
 
  /*FOOTER*/
 
 .bottom-info{
-    background: #2F303A
+    background:var(--footer-color)
 }
 
 .logo-bottom-parth{
-    color:rgba(255, 255, 255, 1);
+    color:var(--bottom-logo-color);
 }
 
 .studio-adress{
+    font-size: 14px;
+    line-height: calc(14/24);
     font-style: normal;
-    color: rgba(255, 255, 255, 1);
+    color: var(--main-text-color);
 }
 
 .contacts-bottom{
@@ -150,22 +163,22 @@ ul{
     font-size: 14px;
     line-height: calc(24/14);
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--bottom-contact-color);
 }
  /*PORTFOLIO*/
 
 .filter-option {
+    
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26/16);
     cursor: pointer;
-    background: #F5F4FA;
+    background: var(--filter-option-color);
     border-radius: 4px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-option:hover,.filter-option:focus{
-    background: rgba(33, 150, 243, 1);
+    background: var(--main-studio-color);
 }
 
 .project-list h2{
@@ -173,16 +186,12 @@ ul{
     font-size: 18px;
     line-height: calc(36/18);
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--projects-name-color);
 }
 
 .project-list p{
     font-size: 16px;
     line-height: calc(30/16);
     letter-spacing: 0.03em;   
-    color: #757575;
-}
-
-.our-pojects{
-    background: #F5F5F5;   
+    color: var(--description-main-color);
 }
